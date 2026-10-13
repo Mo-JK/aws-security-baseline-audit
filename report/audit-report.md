@@ -20,7 +20,7 @@ The 3 rules still failing can't be fixed in this kind of account. Each one is wr
 | Compliant rules | 34 / 44 (77%) | 41 / 44 (93%) |
 | Conformance pack score shown in console | 67% | refresh pending |
 
-The console's score tile weights resources, not rules. It was still showing the old value ("updated 6 hours ago") when I took the final screenshots. The rule-level result is in `screenshots/51-after-noncompliant-3-exceptions.png`.
+The console's score tile weights resources, not rules. It was still showing the old value ("updated 6 hours ago") when I took the final screenshots. The rule-level result is in `51-after-noncompliant-3-exceptions.png`.
 
 ## 2. Method
 
@@ -52,7 +52,7 @@ The **Source** column says how the NIST mapping was obtained:
 | 9 | iam-policy-in-use | `AWSSupportAccess` was not attached to anything | No role exists to manage AWS Support incidents (CIS 1.17) | Created `aws-support-role` with `AWSSupportAccess` | Compliant | IR-7, AC-6 | Analyst | 40–42, 50 |
 | 10 | iam-password-policy | No account password policy | Weak passwords allowed for console users | Not possible in this account type (see 5.2) | Exception | AC-3(15) | AWS | 17, 20 |
 
-Evidence numbers refer to files in `screenshots/` (for example `03` is `03-security-group-ssh-inbound-rule.png`).
+Evidence numbers refer to the numbered screenshot files in this repo (for example `03` is `03-security-group-ssh-inbound-rule.png`).
 
 ## 4. Controls already passing at baseline
 
